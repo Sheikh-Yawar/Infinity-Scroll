@@ -12,7 +12,6 @@ let photosArray = [];
 //*Check if all images were loaded 
 const loadImages = function () {
     imagesLoaded++;
-    console.log(imagesLoaded);
     if (imagesLoaded === totalImages) {
         ready = true;
         loader.hidden = true;
