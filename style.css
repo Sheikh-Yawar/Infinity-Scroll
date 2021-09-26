@@ -45,16 +45,33 @@ h1:hover{
   left: 50%;
   transform: translate(-50%, -50%);
 }
+.loader h1{
+  position: fixed;
+  top: 57%;
+  left: 48%;
+  transform: translate(-50%, -50%);
+}
 
 /*  !Image Container */
 .image-container {
   margin: 1rem 30%;
+
 }
 
 .image-container img {
   width: 100%;
   margin-top: 0.5rem;
   transition: transform 0.8s;
+  animation: moveInLeft 2s ;
+}
+
+@keyframes moveInLeft{
+  0%{
+    transform:translateX(-100%)
+  }
+  100%{
+    transform: translateX(0);
+  }
 }
 
 .outline:hover {
